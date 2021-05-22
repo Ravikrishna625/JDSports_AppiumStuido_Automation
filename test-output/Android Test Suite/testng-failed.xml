@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Android Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Samsung 7S Edge(failed)">
+    <parameter name="port" value="4739"/>
+    <parameter name="platformVersion" value="9.0"/>
+    <parameter name="deviceName" value="emulator-5554"/>
+    <classes>
+      <class name="com.mobile.automation.scripts.JDendtoendflowwithAppiumGrid">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterClass"/>
+          <include name="JDEndtoendFlowPath"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.mobile.automation.scripts.JDendtoendflowwithAppiumGrid -->
+    </classes>
+  </test> <!-- Samsung 7S Edge(failed) -->
+</suite> <!-- Failed suite [Android Test Suite] -->

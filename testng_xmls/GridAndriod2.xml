@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Selenium-Automation" parallel="tests"
+	thread-count="2" preserve-order="false" configfailurepolicy="continue"
+	junit="false" skipfailedinvocationcounts="false"
+	data-provider-thread-count="10" group-by-instances="false"
+	allow-return-values="false">
+	<listeners>
+		<listener
+			class-name="com.web.automation.listeners.ExecutionListener" />
+	</listeners>
+	
+	<test name="Test-mobile-native" junit="false"
+		skipfailedinvocationcounts="false" preserve-order="true"
+		group-by-instances="false" allow-return-values="false">		
+		<parameter name="platform" value="windows" />
+		<parameter name="version" value="6.0.1" />
+		<parameter name="environment" value="QA" />
+		<parameter name="userRegion" value="US" />
+		<parameter name="seleniumGrid" value="false" />
+		<parameter name="localExecution" value="true" />
+		<parameter name="cloudExecution" value="false" />
+		<parameter name="emailReport" value="false" />
+		<!-- <groups> <run> <include name="smoke" /> <include name="regression" 
+			/> </run> </groups> -->
+		<!-- <packages> <package name="com.mobile.automation.scripts.PRstore"></package> 
+			</packages> -->
+	</test>
+
+
+	<test name="Samsung 7S Edge">
+		<parameter name="platformVersion" value="9.0" />
+		<parameter name="deviceName" value="emulator-5554" />
+		<parameter name="port" value="4723" />
+		<classes>
+			<class
+				name="com.mobile.automation.scripts.JDendtoendflowwithAppiumGrid" />
+		</classes>
+	</test> <!-- Test -->
+
+  <test name="Samsung 7S Edgetest">
+		<parameter name="platformVersion" value="9.0" />
+		<parameter name="deviceName" value="emulator-5556" />
+		<parameter name="port" value="4726" />
+		<classes>
+			<class
+				name="com.mobile.automation.scripts.JDendtoendflowwithAppiumGrid" />
+		</classes>
+	</test>
+	<test name="Samsung Galaxy TabS">
+		<parameter name="platformVersion" value="10.0" />
+		<parameter name="deviceName" value="de27bded" />
+		<parameter name="port" value="4728" />
+		<classes>
+			<class
+				name="com.mobile.automation.scripts.JDendtoendflowwithAppiumGrid" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> 

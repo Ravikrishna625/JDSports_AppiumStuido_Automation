@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+  
+  <test thread-count="5" name="Samsung 7S Edge">
+  <parameter name="port" value="4723"></parameter>
+    <parameter name="deviceID" value="de27bded"></parameter>
+     <parameter name="platformVersion" value="Android"></parameter>
+    <classes>
+      <class name="com.mobile.automation.scripts.JDendtoendflowwithAppiumGrid"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test thread-count="5" name="Samsung Galaxy TabS">
+   <parameter name="port" value="4726"></parameter>
+    <parameter name="deviceID" value="emulator-5554"></parameter>
+    <parameter name="platformVersion" value="Android"></parameter>
+    <classes>
+      <class name="com.mobile.automation.scripts.JDendtoendflowwithAppiumGrid"/>
+    </classes>
+  </test> 
+  <test thread-count="5" name="Samsung Galaxy Tab">
+   <parameter name="port" value="4728"></parameter>
+    <parameter name="deviceID" value="emulator-5556"></parameter>
+     <parameter name="platformVersion" value="Android"></parameter>
+    <classes>
+      <class name="com.mobile.automation.scripts.JDendtoendflowwithAppiumGrid"/>
+    </classes>
+  </test>
+  
+  <!-- Test -->
+  
+</suite> <!-- Suite -->

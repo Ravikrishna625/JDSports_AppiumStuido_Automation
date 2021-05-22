@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Selenium-Automation</th></tr>
+<tr><td><a href="#t0">Test-mobile-native</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">40,229</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Selenium-Automation</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test-mobile-native &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.mobile.automation.scripts.JDendtoendflowwithAppium</td><td><a href="#m0">afterSuite</a></td><td rowspan="1">1621599806970</td><td rowspan="1">348</td></tr><tr><th colspan="4">Test-mobile-native &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.mobile.automation.scripts.JDendtoendflowwithAppium</td><td><a href="#m1">JDEndtoendFlowPath</a></td><td rowspan="1">1621599769864</td><td rowspan="1">30561</td></tr></tbody>
+</table>
+<h2>Test-mobile-native</h2><h3 id="m0">com.mobile.automation.scripts.JDendtoendflowwithAppium#afterSuite</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Completed executing method  :- TestEngineWeb.afterSuite</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter
+	at net.lightbody.bmp.core.json.ISO8601WithTDZDateFormatter.serialize(ISO8601WithTDZDateFormatter.java:25)
+	at net.lightbody.bmp.core.json.ISO8601WithTDZDateFormatter.serialize(ISO8601WithTDZDateFormatter.java:1)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:505)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:639)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:152)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serializeContents(IndexedListSerializer.java:100)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serializeContents(IndexedListSerializer.java:21)
+	at com.fasterxml.jackson.databind.ser.std.AsArraySerializerBase.serialize(AsArraySerializerBase.java:183)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:505)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:639)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:152)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:505)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:639)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:152)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:128)
+	at com.fasterxml.jackson.databind.ObjectMapper._configAndWriteValue(ObjectMapper.java:2881)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:2304)
+	at net.lightbody.bmp.core.har.Har.writeTo(Har.java:36)
+	at com.web.automation.bmp.BMP_Proxy_Controller.saveAPIHarLogToHarFile(BMP_Proxy_Controller.java:126)
+	at com.web.automation.accelerators.TestEngineWeb.afterSuite(TestEngineWeb.java:224)
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.DatatypeConverter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:583)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 40 more
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.mobile.automation.scripts.JDendtoendflowwithAppium#JDEndtoendFlowPath</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">About to begin Test :- JDEndtoendFlowPath<br/>About to begin executing method :- JDendtoendflowwithAppium.JDEndtoendFlowPath<br/>Completed executing method  :- JDendtoendflowwithAppium.JDEndtoendFlowPath<br/>About to begin executing method :- JDendtoendflowwithAppium.afterMethod</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

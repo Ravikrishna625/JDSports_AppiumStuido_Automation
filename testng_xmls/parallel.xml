@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Android Test Suite" parallel="tests" thread-count="2">
+	<test name="test1">
+		<parameter name="platformVersion" value="8.0" />
+		<parameter name="deviceName" value="ce0117110aa72f3d04" />
+		<parameter name="port" value="4739" />
+		<classes>
+			<class name="com.mobile.automation.scripts.original.AndroidTestCases" />
+		</classes>
+	</test>
+	<test name="test2">
+		<parameter name="platformVersion" value="7.0" />
+		<parameter name="deviceName" value="11160b85f87f1403" />
+		<parameter name="port" value="4740" />
+		<classes>
+			<class name="com.mobile.automation.scripts.original.AndroidTestCases" />
+		</classes>
+	</test>
+</suite>

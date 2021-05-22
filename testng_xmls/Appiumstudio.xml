@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Selenium-Automation" parallel="tests" thread-count="2"
+	preserve-order="false" configfailurepolicy="continue" junit="false"
+	skipfailedinvocationcounts="false" data-provider-thread-count="10"
+	group-by-instances="false" allow-return-values="false">
+	<listeners>
+		<listener class-name="com.web.automation.listeners.ExecutionListener" />
+	</listeners>
+	<test name="Test-mobile-native" junit="false"
+		skipfailedinvocationcounts="false" preserve-order="true"
+		group-by-instances="false" allow-return-values="false">
+		<parameter name="UDID" value="ce0117110aa72f3d04"/>
+		<parameter name="platform" value="windows" />
+		<parameter name="browser" value="iPAD" />
+		<parameter name="version" value="6.0.1" />
+		<parameter name="environment" value="QA" />
+		<parameter name="userRegion" value="US" />
+		<parameter name="seleniumGrid" value="false" />
+		<parameter name="localExecution" value="true" />
+		<parameter name="cloudExecution" value="false" />
+		
+		<parameter name="emailReport" value="false" />
+		<!-- <groups>
+			<run>
+				<include name="smoke" /> <include name="regression" />
+			</run>
+		</groups> -->
+		<!-- <packages>
+		<package name="com.mobile.automation.scripts.PRstore"></package>
+		</packages> -->
+		 <classes>
+		<class name="com.mobile.automation.scripts.JDendtoendflow"/>
+		</classes>
+	</test>
+</suite> 

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Samsung Galaxy Tab(failed)">
+    <parameter name="port" value="4728"/>
+    <parameter name="platformVersion" value="Android"/>
+    <parameter name="deviceID" value="emulator-5556"/>
+    <classes>
+      <class name="com.mobile.automation.scripts.JDendtoendflowwithAppiumGrid">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterClass"/>
+          <include name="JDEndtoendFlowPath"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.mobile.automation.scripts.JDendtoendflowwithAppiumGrid -->
+    </classes>
+  </test> <!-- Samsung Galaxy Tab(failed) -->
+  <test thread-count="5" parallel="tests" name="Samsung 7S Edge(failed)">
+    <parameter name="port" value="4723"/>
+    <parameter name="platformVersion" value="Android"/>
+    <parameter name="deviceID" value="de27bded"/>
+    <classes>
+      <class name="com.mobile.automation.scripts.JDendtoendflowwithAppiumGrid">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterClass"/>
+          <include name="JDEndtoendFlowPath"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.mobile.automation.scripts.JDendtoendflowwithAppiumGrid -->
+    </classes>
+  </test> <!-- Samsung 7S Edge(failed) -->
+  <test thread-count="5" parallel="tests" name="Samsung Galaxy TabS(failed)">
+    <parameter name="port" value="4726"/>
+    <parameter name="platformVersion" value="Android"/>
+    <parameter name="deviceID" value="emulator-5554"/>
+    <classes>
+      <class name="com.mobile.automation.scripts.JDendtoendflowwithAppiumGrid">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterClass"/>
+          <include name="JDEndtoendFlowPath"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.mobile.automation.scripts.JDendtoendflowwithAppiumGrid -->
+    </classes>
+  </test> <!-- Samsung Galaxy TabS(failed) -->
+</suite> <!-- Failed suite [Suite] -->
