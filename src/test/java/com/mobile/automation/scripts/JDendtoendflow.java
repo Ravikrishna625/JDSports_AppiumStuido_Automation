@@ -74,7 +74,7 @@ public class JDendtoendflow extends TestEngineWeb {
 		boolean passflag = true;
 
 		try {
-
+           // sample changes
 			mob_actionLib.DriverNoResetFlag = true;	
 			this.driver = mob_actionLib.StartAppiumStudioAndriod(appName);	
 			JDHomePage jd = new JDHomePage(this.driver);	
